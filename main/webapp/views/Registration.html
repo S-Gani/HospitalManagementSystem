@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!-- Bootstrap CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../files/stackpath.bootstrapcdn.com_bootstrap_4.5.2_css_bootstrap.min.css"> -->
+    <!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <!-- temp -->
+    <script src="../files/Ajax/cdnjs.cloudflare.com_ajax_libs_jquery_3.7.0_jquery.min.js"></script> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="navbar-con"></div>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="text-center">Registration Form</h3>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="userName">User Name</label>
+                                <input type="text" class="form-control" id="userName" required>
+                            </div>
+                            <div id="userNameError"></div>
+                            <div class="form-group">
+                                <label for="gender">Gender</label>
+                                <select class="form-control" id="gender" required>
+                                    <option value="">Select Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                
+                            <div class="form-group">
+                                <label for="age">Age</label>
+                                <input type="number" class="form-control" id="age" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phoneNumber">Phone Number</label>
+                                <input type="number" class="form-control" id="phoneNumber" required>
+                            </div>
+                            <div id="phoneNumberError"></div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div id="emailError"></div>
+                            <div class="form-group">
+                                <label for="createUserid">Create User ID</label>
+                                <input type="text" class="form-control" id="createUserid" required>
+                            </div>
+                            <div id="useridError"></div>
+                            <div class="form-group">
+                                <label for="createPassword">Create Password</label>
+                                <input type="password" class="form-control" id="createPassword" required>
+                            </div>
+                            <div id="passwordError"></div>
+                            <button type="submit" class="btn btn-primary btn-block" id="registerBtn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/sample.js"></script>
+</body>
+</html>
